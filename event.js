@@ -1,7 +1,7 @@
 const _initTime = Date.now()
 
 const getElapsedTime = () => {
-  return Number((Date.now() - _initTime) / 1000).toFixed(2) + 's'
+  return Number((Date.now() - _initTime) / 1000).toFixed(2) + 's' + ' ' + '[New Square Created]'
 }
 
 const clickOnSquare = (e) => {
@@ -14,11 +14,12 @@ const clickOnSquare = (e) => {
   let section = main.children[0]
   section.appendChild(div)
 
-    let list = document.createElement('ul')
+    let list = document.createElement('li')
     let listSection = main.children[2]
+    let ulSection = listSection.children[1]
     let chrono = getElapsedTime()
     list.innerHTML = chrono
-    listSection.appendChild(list)
+    ulSection.appendChild(list)
 
 
 
