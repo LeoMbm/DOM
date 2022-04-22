@@ -1,35 +1,37 @@
-*{
-  box-sizing: border-box;
-}
-
 body{
-
-  margin: 0 auto;
-  padding: 0;
+  margin: auto;
+  transition: .3s;
 }
 
-header, footer{
-  position: fixed;
-  background-color: #000;
-  color: #fff;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header{
-  top: 0;
-  height: 80px;
-}
-
-footer{
-  bottom: 0;
+.actionsquare, .displayedsquare{
+  margin: 25px;
   height: 50px;
+  width: 50px;
+  transition: .3s;
+}
+
+.actionsquare:hover{
+  transform: scale(1.5);
+}
+
+.green{
+  background-color: lime;
+}
+
+.violet{
+  background-color: magenta;
+}
+
+.orange{
+  background-color: orange;
+}
+
+.actionsquare-wrapper, .displayedsquare-wrapper{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 main{
-  max-width: 1200px;
-  margin: 150px auto;
+  max-width: 1000px;
+  margin: 100px auto;
 }

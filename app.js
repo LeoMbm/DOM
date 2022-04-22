@@ -18,6 +18,7 @@ let mainChild = main.children
 let firstSection = main.children[0];
 firstSection.setAttribute('id', 'first');
 
+
 let secondSection = main.children[1];
 secondSection.setAttribute('id', 'second');
 
