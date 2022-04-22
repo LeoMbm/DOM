@@ -1,14 +1,14 @@
-// let list = document.querySelector('ol')
-// let listChild = list.children
+let list = document.querySelector('ol')
+let listChild = list.children
 
 
-// const firstLine = listChild[0];
-// const lastLine = listChild[4];
+const firstLine = listChild[0];
+const lastLine = listChild[4];
 
-// firstLine.appendChild(lastLine);
+firstLine.appendChild(lastLine);
 
 
-// console.log(listChild.textContent);
+console.log(listChild.textContent);
 
 
 let main = document.querySelector('main')
