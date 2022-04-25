@@ -51,5 +51,16 @@ document.addEventListener('keypress', (e) =>{
 
     }
   console.log('Background Color is ' + randomColors())
+    let div = document.createElement('div')
+    div.className = 'Bgcolors'
+    let main = document.querySelector('main') 
+    let section = main.children[0]
+    section.appendChild(div)
+    let list = document.createElement('li')
+    let listSection = main.children[2]
+    let ulSection = listSection.children[1]
+    let colors = randomColors()
+    list.innerHTML = 'Background is' + ' ' + colors;
+    ulSection.appendChild(list)
 
 })
