@@ -48,7 +48,7 @@ const actionSquares = document.querySelectorAll('.actionsquare')
 document.addEventListener('keypress', (e) =>{
     if(e.which === 32){
         document.body.style.backgroundColor = randomColors() 
-        console.log('Background Color is ' + randomColors())
+        // console.log('Background Color is ' + randomColors())
     let div = document.createElement('div')
     div.className = 'Bgcolors'
     let main = document.querySelector('main') 
@@ -69,7 +69,7 @@ document.addEventListener('keypress', (e) =>{
 
 document.addEventListener('keypress', (e) => {
   
-  let list = document.querySelectorAll('li')
+  
   let ulSection = document.querySelector('ul')
   let code = e.key || e.which
 
@@ -84,11 +84,20 @@ document.addEventListener('keypress', (e) => {
 
   }
 
-
-  
-  
-  console.log(code)
+  // console.log(code)
 
 })
 
+document.addEventListener('keypress', (e) => {
 
+  let square = document.querySelector('.displayedsquare')
+  let code = e.key || e.which
+
+  if (code === 's'){
+
+    square.remove()
+    
+    
+}
+
+})
