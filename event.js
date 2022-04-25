@@ -93,6 +93,9 @@ document.addEventListener('keypress', (e) => {
   let square = document.querySelector('.displayedsquare')
   let code = e.key || e.which
 
+
+
+
   if (code === 's'){
 
     square.remove()
@@ -101,3 +104,8 @@ document.addEventListener('keypress', (e) => {
 }
 
 })
+
+
+
+
+
