@@ -6,8 +6,8 @@ const getElapsedTime = () => {
 
 const clickOnSquare = (e) => {
 
-  console.log(e.target.classList[1])
-  console.log(getElapsedTime())
+  // console.log(e.target.classList[1])
+  // console.log(getElapsedTime())
   let div = document.createElement('div')
   div.className = 'displayedsquare'+ ' ' + e.target.classList[1]
   let main = document.querySelector('main')
@@ -36,4 +36,20 @@ const actionSquares = document.querySelectorAll('.actionsquare')
 
         
     }
-    
+
+
+    function randomColors () {
+
+      var o = Math.round, r = Math.random, s = 255;
+      return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+
+    }
+
+document.addEventListener('keypress', (e) =>{
+    if(e.which === 32){
+        document.body.style.backgroundColor = randomColors() 
+
+    }
+  console.log('Background Color is ' + randomColors())
+
+})
